@@ -1,38 +1,21 @@
-const content = [2,3,4,55,67,8,8,8];
+const content = ["goat", "goat_2", 1];
 let box_1 = [];
 let box_2 = [];
 let box_3 = [];
 
-// console.log(content.splice(2,3));
-
-
-
-let x = content[Math.floor(Math.random() * content.length)]; // 0 1 2 
-console.log(x);
-box_1.push(x);
+console.log(content);
+let random_index = Math.floor(Math.random() * content.length) // losuje: 0-2
+console.log(random_index);
+box_1 = content.splice(random_index,1);
 console.log(box_1);
-content.splice(x, x+1);
+console.log(content);
+box_2 = content.splice(random_index -1,1);
+console.log(content);
+box_3.push(content[0]);
 
-// console.log(content);
-// console.log(content.length);
-
-// box_2.push(content[Math.floor(Math.random() * content.length)]);
-// console.log(box_2);
-
-//  box_3.push(content[Math.floor(Math.random() * content.length)]);
-//  console.log(box_3);
-
-//     let box1 = boxes[Math.floor(Math.random()*content.length)]; 
-//     let box2 = boxes[Math.floor(Math.random()*content.length)]; 
-//     let box3 = boxes[Math.floor(Math.random()*content.length)]; 
-// }
-
-
-
-
-
-
-
+console.log(box_1);
+console.log(box_2);
+console.log(box_3);
 
 
 //LOSOWANIE LICZB 
